@@ -22,6 +22,30 @@
     height: auto;
   }
   
+/* General styles */
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Welcome section styles */
+#welcome-section {
+  display: flex;
+  align-items: center;
+  margin-left: 20%; /* Adjust as needed */
+}
+
+#profile-image {
+  width: 300px; /* Adjust image width as needed */
+  margin-right: 10px; /* Adjust spacing between image and text */
+  padding-bottom: 5%;
+}
+
+#welcome-text {
+  flex-grow: 1;
+}
+
+
 
   #logo {
   position: absolute;
@@ -32,12 +56,14 @@
   z-index: 1; /* Ensure the logo appears above other elements */
   }
 
-  #logo-text {
+  #header-text {
     position: absolute;
-    top: 10px; /* Adjust the top position as needed */
-    left: 70px; /* Adjust the left position as needed based on the width of the logo */
-    font-size: 18px; /* Adjust the font size as needed */
-    font-weight: bold; /* Adjust font weight if necessary */
+    top: 15px;
+    left: 70px; /* Adjust the left position as needed */
+    font-weight: bold;
+    font-size:x-large;
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure the logo appears above other elements */
   }
 
   /* UTILITY CLASSES */
@@ -126,6 +152,71 @@
     color: rgb(240, 248, 255);
   }
   
+  #interests {
+    text-align: center;
+    width: 100%;
+    padding: 7rem .1rem;
+    background-color: var(--secondary-color);
+  }
+  
+  #interests .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  #interests .container>h1 {
+    font-size: 2.6rem;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-bottom: .6rem;
+    line-height: 1.2;
+  }
+  
+  #bottom-line {
+    height: 6px;
+    background-color: #fff;
+    width: 55%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+  
+  #interests .projects .box {
+    background-color: #eee;
+    border: 5px solid #eee;
+    border-radius: 3px;
+  }
+  
+  #interests .projects .box a {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  #interests .projects .box a p {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+  }
+  
+  
+  .code {
+    color: #eee;
+    transition: .5s all ease;
+    font-size: 1.6rem;
+  }
+  
+  #interests .projects .box:hover .code {
+    color: var(--primary-color);
+  }
+
   #projects {
     text-align: center;
     width: 100%;
