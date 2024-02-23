@@ -211,7 +211,7 @@
   .code {
     color: #eee;
     transition: .5s all ease;
-    font-size: 3rem;
+    font-size: 1.6rem;
   }
   
   #interests .projects .box:hover .code {
@@ -276,7 +276,7 @@
   .code {
     color: #eee;
     transition: .5s all ease;
-    font-size: 3rem;
+    font-size: 1.6rem;
   }
   
   #projects .projects .box:hover .code {
